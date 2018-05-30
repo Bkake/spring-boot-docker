@@ -1,0 +1,53 @@
+:toc:
+
+= Spring-boot-docker
+
+== Requirements 
+   
+   Dockerfile : https://docs.docker.com/get-started
+   
+   Docker-compose : https://docs.docker.com/compose
+   
+   
+== Build the project
+
+[source, text]
+----
+cd initial
+mvn package
+----
+
+== Run docker-compose
+
+[source, text]
+----
+docker-compose up -d --build
+----
+
+== Display list containers
+
+[source, text]
+----
+docker-compose ps
+----
+
+== Stop and remove containers, networks, images, and volumes
+
+[source, text]
+----
+docker-compose down
+----
+
+== Scale service
+Scale to 5 instances. Overrides the scale setting in the Compose file if present.
+
+[source, text]
+----
+docker-compose up -d --scale web=5 --build
+----
+
+
+
+
+
+
