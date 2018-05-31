@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>initial</module>
+        <module>docker-maven-plugin</module>
     </modules>
 
     <parent>
@@ -22,6 +23,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <docker.image.prefix>bkake</docker.image.prefix>
     </properties>
 
     <build>
